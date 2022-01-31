@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Vehicle.php';
+require_once 'LightableInterface.php';
 
 class Car extends Vehicle implements LightableInterface
 {
@@ -9,7 +10,7 @@ class Car extends Vehicle implements LightableInterface
         return true;
     }
 
-    public function swithOff(): bool
+    public function switchOff(): bool
     {
         return false;
     }
